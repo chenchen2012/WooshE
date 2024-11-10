@@ -1,0 +1,116 @@
+/* Reset and basic styling */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Arial', sans-serif; color: #333; line-height: 1.6; }
+
+/* Duke Blue-inspired colors */
+:root {
+    --duke-blue: #001A57;
+    --duke-light-blue: #004F9E;
+    --duke-accent: #CEE6F3;
+    --duke-white: #F5F5F5;
+}
+
+/* Header styling */
+header {
+    background: var(--duke-blue);
+    color: var(--duke-white);
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+header h1 { font-size: 3em; font-weight: bold; text-transform: lowercase; }
+header p { font-size: 1.2em; margin-top: 10px; }
+
+/* Hero section */
+.hero {
+    padding: 60px 20px;
+    background-color: var(--duke-light-blue);
+    text-align: center;
+    color: var(--duke-white);
+}
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: lowercase;
+}
+.hero p { font-size: 1.2em; color: var(--duke-accent); max-width: 600px; margin: 0 auto; }
+.button {
+    background-color: var(--duke-blue);
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.button:hover {
+    background-color: #002c73;
+    transform: translateY(-3px);
+}
+
+/* Section styling */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: var(--duke-white);
+    color: var(--duke-blue);
+}
+.section h2 {
+    font-size: 2.5em;
+    color: var(--duke-blue);
+    margin-bottom: 20px;
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.feature {
+    max-width: 300px;
+    margin: 20px;
+    background-color: var(--duke-light-blue);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact section */
+#contact {
+    background-color: var(--duke-blue);
+    color: var(--duke-white);
+    padding: 40px 20px;
+}
+#contact h2 { text-transform: lowercase; }
+.button-contact {
+    background-color: var(--duke-light-blue);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    text-decoration: none;
+}
+.button-contact:hover {
+    background-color: #003c82;
+}
+
+/* Footer */
+footer {
+    background-color: #001A57;
+    color: var(--duke-white);
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+.footer-links a {
+    color: var(--duke-accent);
+    margin: 0 10px;
+    text-decoration: none;
+}
