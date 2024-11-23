@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fast, Human-Touched English-Chinese Translations with wooshE">
-    <title>wooshE - Fast, Human-Touched Translations</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="Fast, Human-Touched English-Chinese Translations with Wooshe">
+    <title>WOOSHE - Fast, Human-Touched Translations</title>
+    <!-- Google Fonts for a clean and professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Enhanced and responsive CSS */
+        /* Clean and modern CSS */
         body {
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
-            background: linear-gradient(to bottom right, #1e3c72, #2a5298);
-            color: #f0f8ff;
+            background: #f9f9f9;
+            color: #333333;
             overflow-x: hidden;
         }
 
@@ -20,31 +21,22 @@
         header {
             text-align: center;
             padding: 2em;
-            background: rgba(30, 60, 114, 0.9);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            background: #ffffff; /* Light header background */
+            border-bottom: 2px solid #e6e6e6; /* Adds a subtle border for separation */
+            position: relative;
+        }
+
+        /* Logo Styling */
+        header img {
+            display: block;
+            margin: 0 auto 1em;
+            width: 150px;
         }
 
         header h1 {
             font-size: 2.8em;
-            color: #ffdf5d;
-            animation: pulse 2s infinite alternate;
-        }
-
-        /* Ensures lowercase woosh and uppercase E */
-        .capitalize-e {
-            text-transform: uppercase;
-        }
-        .lowercase {
-            text-transform: lowercase;
-        }
-
-        @keyframes pulse {
-            from {
-                text-shadow: 0 0 5px #ffdf5d, 0 0 10px #ffdf5d, 0 0 15px #ffdf5d;
-            }
-            to {
-                text-shadow: 0 0 10px #ffdf5d, 0 0 20px #ffdf5d, 0 0 30px #ffdf5d;
-            }
+            color: red;
+            margin: 0;
         }
 
         nav {
@@ -52,7 +44,7 @@
         }
 
         nav a {
-            color: #f0f8ff;
+            color: #333333;
             margin: 0 1em;
             text-decoration: none;
             font-weight: bold;
@@ -60,44 +52,42 @@
         }
 
         nav a:hover {
-            color: #ffdf5d;
+            color: red;
         }
 
         /* Hero Section */
         .hero {
             text-align: center;
             padding: 5em 1em;
-            background-image: url('your-hero-image.jpg'); /* Add a background image for impact */
-            background-size: cover;
-            background-position: center;
-            color: #ffffff;
-            box-shadow: inset 0 0 2000px rgba(0, 0, 0, 0.4);
+            background: #e6e6e6;
+            color: #333333;
         }
 
         .hero h1 {
             font-size: 3em;
-            color: #ffdf5d;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+            color: red;
         }
 
         .hero p {
             font-size: 1.5em;
             margin-bottom: 1em;
+            line-height: 1.8;
         }
 
         .button {
             padding: 0.8em 1.5em;
-            background-color: #ffdf5d;
-            color: #1e3c72;
+            background-color: red;
+            color: #ffffff;
             border: none;
             font-weight: bold;
             cursor: pointer;
             transition: background 0.3s, transform 0.3s;
             display: inline-block;
+            text-decoration: none;
         }
 
         .button:hover {
-            background-color: #e5c84d;
+            background-color: #cc0000;
             transform: scale(1.05);
         }
 
@@ -105,11 +95,16 @@
         .section {
             padding: 3em 1em;
             text-align: center;
-            background: rgba(255, 255, 255, 0.1);
+            background: #f5f5f5;
             margin: 1em auto;
             width: 80%;
             border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: red;
+            font-size: 2em;
         }
 
         .features {
@@ -123,10 +118,10 @@
             flex: 1 1 300px;
             padding: 1.5em;
             margin: 1em;
-            background: rgba(255, 255, 255, 0.1);
+            background: #ffffff;
             border-radius: 10px;
-            color: #f0f8ff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            color: #333333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
         }
 
@@ -135,35 +130,41 @@
         }
 
         .feature h3 {
-            color: #ffdf5d;
+            color: red;
+            font-size: 1.5em;
         }
 
         /* Contact Section */
         .contact {
             text-align: center;
             padding: 2em;
-            background: rgba(30, 60, 114, 0.8);
-            color: #f0f8ff;
-            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+            background: #f9f9f9;
+            color: #333333;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact h2 {
+            color: red;
+            font-size: 2em;
         }
 
         /* Footer */
         footer {
             padding: 1em;
             text-align: center;
-            background: #1e3c72;
-            color: #f0f8ff;
+            background: #333333;
+            color: #ffffff;
             box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
         }
 
         .footer-links a {
-            color: #f0f8ff;
+            color: #ffffff;
             margin: 0 0.5em;
             text-decoration: none;
         }
 
         .footer-links a:hover {
-            color: #ffdf5d;
+            color: red;
         }
 
         /* Responsive Design */
@@ -182,8 +183,10 @@
 
     <!-- Header and Navigation -->
     <header>
-        <h1><span class="lowercase">woosh</span><span class="capitalize-e">E</span></h1>
-        <p>Fast, Human-Touched Translations That <span style="color: #ffdf5d;">Connect</span></p>
+        <!-- Logo Image -->
+        <img src="/images/logo.png" alt="Wooshe Logo">
+        <h1>Wooshe</h1>
+        <p>Fast, Human-Touched Translations That <span style="color: red;">Connect</span></p>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -194,8 +197,8 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1><span class="capitalize-e">E</span> for <span class="capitalize-e">Exceptional</span> and <span class="capitalize-e">Excellent</span></h1>
-        <p>woosh<span class="capitalize-e">E</span> Delivers Precise English-Chinese Translations That Capture Tone, Context, And Clarity.</p>
+        <h1>Exceptional English-Chinese & Chinese-English Translations</h1>
+        <p>Wooshe Seamlessly Connecting Worlds with Masterful Translations—Capturing Every Nuance, Tone, and Context to Bring Your Words to Life!</p>
         <a href="#services" class="button">Discover Our Services</a>
     </section>
 
@@ -205,15 +208,15 @@
         <div class="features">
             <div class="feature">
                 <h3>Professional Translation</h3>
-                <p>Accurate English-Chinese Translations That Bridge Cultural Nuances And Connect Meaningfully With Readers.</p>
+                <p>Accurate English-Chinese Translations That Bridge Cultural Nuances and Connect Meaningfully with Readers.</p>
             </div>
             <div class="feature">
                 <h3>Authentic Writing</h3>
-                <p>Compelling English Content Crafted To Resonate Naturally With A Global Audience, Tailored To Your Message.</p>
+                <p>Compelling English Content Crafted to Resonate Naturally with a Global Audience, Tailored to Your Message.</p>
             </div>
             <div class="feature">
                 <h3>Precision Editing</h3>
-                <p>Thorough Editing To Ensure Clarity And Impact, Refining Every Detail For A Flawless Final Result.</p>
+                <p>Thorough Editing to Ensure Clarity and Impact, Refining Every Detail for a Flawless Final Result.</p>
             </div>
         </div>
     </section>
@@ -221,13 +224,13 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2>Contact Us</h2>
-        <p>If you have any questions or need a quote, feel free to reach out to me directly:</p>
-        <p><a href="mailto:chenchen2012@hotmail.com" class="button">Email Me</a></p>
+        <p>If you have any questions or need a quote, feel free to reach out:</p>
+        <p><a href="https://news.robot.tv/contact" class="button">Contact Us</a></p>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 woosh<span class="capitalize-e">E</span>. All Rights Reserved.</p>
+        <p>&copy; 2000-2024 Wooshe. All Rights Reserved.</p>
         <div class="footer-links">
             <a href="index.html">Home</a> |
             <a href="about.html">About</a> |
